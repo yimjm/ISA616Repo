@@ -1,0 +1,31 @@
+---
+title: "Summarize mtcars data"
+author: "Bill Myers"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc-location: left
+    toc-expand: true
+    code-tools: true
+    code-fold: true
+    code-overflow: scroll
+    self-contained: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=8, fig.height=6)
+```
+
+
+```{r}
+data(mtcars)
+head(mtcars)
+summary(mtcars)
+```
+
+
+
+
